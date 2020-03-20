@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 20 18:48:23 2020
+
+@author: krypton
+"""
+
+median blur is actually good for keeping details but blurring as well
+
+bilateralFilter also does the same thing
