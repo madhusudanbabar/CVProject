@@ -8,3 +8,5 @@ Created on Fri Mar 20 18:48:23 2020
 median blur is actually good for keeping details but blurring as well
 
 bilateralFilter also does the same thing
+
+morphologyEx is good for removing bg noise
