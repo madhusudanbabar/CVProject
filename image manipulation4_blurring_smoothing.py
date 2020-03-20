@@ -82,4 +82,22 @@ font = cv2.FONT_HERSHEY_COMPLEX
 cv2.putText(img, text = "krypton", org = (10,600), fontFace = font, fontScale = 10, color = (255, 0, 0),thickness = 5)
 disp_img(img)
 
-#
+#%% median blur
+
+mblur = cv2.medianBlur(img,5)
+disp_img(mblur)
+
+#%% noisy images
+
+img = cv2.imread("../DATA/sammy.jpg")
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+disp_img(img)
+
+#%% noise 
+
+noise_img = cv2.imread("../DATA/sammy_noise.jpg")
+disp_img(noise_img)
+
+#%% med
+med = cv2.medianBlur(noise_img, 5)
+disp_img(med)
