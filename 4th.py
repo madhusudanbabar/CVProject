@@ -23,3 +23,9 @@ plt.imshow(img)
 
 #%%
 
+while True:
+    cv2.imshow("puppy", img)
+    if cv2.waitKey(1) & OxFF == ord('k'):
+        break
+    
+cv2.destroyAllWindows()
