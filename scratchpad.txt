@@ -12,3 +12,5 @@ bilateralFilter also does the same thing
 morphologyEx is good for removing bg noise
 
 sobel operators are good for X Y dir gradients
+
+// returns int eg 10 // 2 will return 5 but 10 / 2 will return 5.0
