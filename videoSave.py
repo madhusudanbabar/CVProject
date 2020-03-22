@@ -9,19 +9,20 @@ Created on Sun Mar 22 09:12:23 2020
 #%% imports
 import cv2
 
+#%% video object
+cap = cv2.VideoCapture(0)
+
 #%% properties
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 
-
-#%% 
-cap = cv2.VideoCapture(0)
+#%% writer object
 fourcc = cv2.VideoWriter_fourcc(*'DIVX') #*'DIVX' for win *'VIDX' for UNIX
 writer = cv2.VideoWriter("krypton.avi", fourcc,fps,(width,height))
 
 
-#%%
+#%% to display actual frames
 
 while True:
     
