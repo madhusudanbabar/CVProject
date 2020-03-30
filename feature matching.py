@@ -30,4 +30,16 @@ display(cereals)
 orb = cv2.ORB_create()
 kp1, des1 = orb.detectAndCompute(reeses, None)  
 kp2, des2 = orb.detectAndCompute(cereals, None) 
- 
+
+#%% 
+bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck = True) 
+
+#%%
+matches = bf.match(des1, des2)
+
+#%% 
+matches = sorted(matches, key=lambda x:x.distance)
+
+#%% 
+reeses_matches = cv2.drawMatches(reeses, kp1, cereals, kp2, matches[:25], None, flags=2)
+display(reeses_matches)
