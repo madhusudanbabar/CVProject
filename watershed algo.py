@@ -75,3 +75,4 @@ for i in range(len(contours)):
     if hierarchy[0][i][3] == -1:
         cv2.drawContours(sep, contours, i, (255,0,0),10)
         
+display(sep)
