@@ -1,2 +1,2 @@
 # CVProject
-this is my computer vision project
+OpenCV2 course assignments | programs
